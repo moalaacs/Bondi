@@ -1,10 +1,17 @@
 :root {
   --dark-color: #19283f;
   --teal-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
 }
 body {
   font-family: 'Roboto', sans-serif;
   height: 5000px;
+}
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
 }
 /* Start Navbar */
 .navbar {
@@ -33,3 +40,9 @@ body {
   box-shadow: none;
 }
 /* End Navbar */
+/* Start Landing */
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 72px);
+}
+/* End Landing */
