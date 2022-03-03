@@ -77,3 +77,41 @@ body {
   color: var(--yellow-color);
 }
 /* End Features */
+/* Start Our Work */
+.our-work {
+  background-color: var(--section-color);
+}
+.our-work ul .active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+.our-work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.our-work ul li:not(.active):hover {
+  color: var(--yellow-color);
+}
+.our-work .box {
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  background: #33d1cca8;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.3rem;
+  transition: 0.3s;
+  transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover::before {
+  transform: translateX(0);
+}
+/* End Our Work */
