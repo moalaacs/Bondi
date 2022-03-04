@@ -119,3 +119,24 @@ body {
   max-width: 500px;
 }
 /* End Stuff */
+/* Start Our Team */
+.our-team {
+  background-color: var(--section-color);
+}
+.our-team h2 {
+  color: var(--yellow-color);
+  font-size: 2rem;
+}
+.our-team .box .image {
+  overflow: hidden;
+}
+.our-team .box img {
+  transition: 0.3s;
+}
+.our-team .box:hover img {
+  transform: rotate(5deg) scale(1.2);
+}
+.our-team .box h4 {
+  background-color: var(--teal-color);
+}
+/* End Our Team */
