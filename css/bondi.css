@@ -145,6 +145,25 @@ body {
   background-color: var(--dark-color);
 }
 /* End Project */
+/* Start Blog */
+.blog .card:hover {
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* End Blog */
 /* Start Subscribe */
 .subscribe {
   background-color: var(--yellow-color);
@@ -164,3 +183,34 @@ body {
   color: var(--yellow-color);
 }
 /* End Subscribe */
+/* Start Footer */
+.footer {
+  background-color: var(--dark-color);
+}
+.footer .copyright > span {
+  color: var(--teal-color);
+}
+.footer .copyright div span {
+  color: var(--yellow-color);
+}
+.footer li:hover {
+  color: var(--teal-color);
+  cursor: pointer;
+}
+.footer .contact ul svg {
+  width: 20px;
+}
+.footer .facebook {
+  background-color: #1877f2;
+}
+.footer .twitter {
+  background-color: #1da1f2;
+}
+.footer .linkedin {
+  background-color: #0077b5;
+}
+.footer .github {
+  color: #000000;
+  background-color: #ffffff;
+}
+/* End Footer */
